@@ -56,8 +56,8 @@ def modelGen(dfs, TRAIN_PATH, bs=128):
                 resnet18,
                 metrics=[
                     accuracy,
-                    #RocAucBinary(average='weighted'),
-                    #Precision(average='weighted'),
+                    RocAucBinary(average='weighted'),
+                    Precision(average='weighted'),
                     #F1Score(average='weighted'),
                     Recall(average='weighted')
                 ]
